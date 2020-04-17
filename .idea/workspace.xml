@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="导入真实数据开始yu'c">
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="导入真实数据开始">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forth.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/forth.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/forth.py" afterDir="false" />
@@ -200,7 +200,7 @@
       <workItem from="1586595228425" duration="345000" />
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
-      <workItem from="1587138034282" duration="8411000" />
+      <workItem from="1587138034282" duration="10749000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -277,10 +277,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="860" y="29" key="#second_(1)/0.0.1536.834@0.0.1536.834" timestamp="1586055774837" />
-    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587147722444">
+    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587150062336">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587147722444" />
+    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587150062336" />
     <state x="862" y="100" width="581" height="640" key="DiffContextDialog" timestamp="1587144612268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -321,10 +321,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="562" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1587140624613" />
-    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587145018713">
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587149676926">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587145018713" />
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587149676926" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COVID_19$second__1_.coverage" NAME="second (1) Coverage Results" MODIFIED="1585934359072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -29,14 +29,17 @@ S0 = N-I0-R0
 #设置初始值
 y0 = [S0,I0,R0]
 
-#设置疫情的时间跨度为60天或360天
-t = np.linspace(1,360,360)
-
 #设置beta的值等于0.125
 beta = 0.125
 
 #设置gamma的值等于0.05
 gamma = 0.05
+
+'''
+#绘图测试
+
+#设置疫情的时间跨度为60天或360天
+t = np.linspace(1,360,360)
 
 #求解，每次改完时间要从新计算solution
 solution = odeint(SIR, y0, t, args=(beta, gamma))
@@ -46,7 +49,7 @@ np.set_printoptions(suppress=True)
 #显示前4行结果
 #solution[0:4,0:3]
 
-#绘图
+
 fig, ax = plt.subplots(facecolor='w', dpi=100)
 
 for data, color, label_name in zip([solution[:,0] ,solution[:,1], solution[:,2]], ['b','r', 'g'],['susceptible','infectious','recovered']):
@@ -58,6 +61,7 @@ ax.legend()
 ax.grid(axis='y')
 plt.box(False)
 #plt.show()
+'''
 
 #导入数据
 data = pd.read_csv('alltime_province_2020_04_04.csv')
@@ -67,3 +71,26 @@ hubei = data[data['name']=='湖北']
 infectious_real = hubei['total_confirm']-hubei['total_heal']-hubei['total_dead']
 recovered_real = hubei['total_heal']+hubei['total_dead']
 susceptible = N-infectious_real-recovered_real
+
+#确定观察的时间周期
+T = len(infectious_real)
+#设置估计疫情的时间跨度为T天
+t = np.linspace(1,T,T)
+#估计三种人是数据量
+solution = odeint(SIR, y0, t, args=(beta, gamma))
+#绘图
+fig, ax = plt.subplots(facecolor='w',dpi=100)
+#绘制估计的I曲线和真实的I曲线
+ax.plot(t, infectious_real, 'r-.', alpha=0.5, lw=2, label='infected_real')
+ax.plot(t, solution[:,1], 'r', alpha=0.5, lw=2, label='infected_predict')
+#绘制估计的R曲线和真实的R曲线
+ax.plot(t, recovered_real, 'g-.', alpha=0.5, lw=2, label='recovered_real')
+ax.plot(t, solution[:,2], 'g', alpha=0.5, lw=2, label='recovered_predict')
+#设置横纵坐标轴
+ax.set_xlabel('Time/days')
+ax.set_ylabel('Number')
+#添加图例
+ax.legend()
+ax.grid(axis='y')
+plt.box(False)
+plt.show()
