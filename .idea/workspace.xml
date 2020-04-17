@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="" />
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alltime_province_2020_04_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forth.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/使用 SIR 模型进行疫情模拟预测.数据集.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/使用 SIR 模型进行疫情模拟预测/alltime_province_2020_04_04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/使用 SIR 模型进行疫情模拟预测/alltime_world_2020_04_04.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alltime_world_2020_04_04.csv" beforeDir="false" afterPath="$PROJECT_DIR$/alltime_world_2020_04_04.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third动态图生成.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/third动态图生成.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +26,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JupyterTrust" id="08df7809-6807-4b77-ab54-1e250f68a81c" />
   <component name="ProjectId" id="1ZykO5TD5rhMVglgF7tfv1hyOiN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -145,11 +165,15 @@
       <workItem from="1586595228425" duration="345000" />
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
+      <workItem from="1587138034282" duration="1436000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="897" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585843865297">
@@ -184,10 +208,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="570" height="185" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586614194010" />
-    <state x="540" y="62" key="SettingsEditor" timestamp="1586597027006">
+    <state x="540" y="62" key="SettingsEditor" timestamp="1587138092230">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586597027006" />
+    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587138092230" />
     <state x="815" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585996059817">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
