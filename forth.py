@@ -1,3 +1,5 @@
+import numpy as np
+from scipy.integrate import odeint
 
 #写出SIR模型的函数
 def SIR(y,t,beta,gamma):
@@ -18,3 +20,22 @@ R0 = 31
 S0 = N-I0-R0
 #设置初始值
 y0 = [S0,I0,R0]
+
+#设置疫情的时间跨度为60天
+t = np.linspace(1,60,60)
+
+#设置beta的值等于0.125
+beta = 0.125
+
+#设置gamma的值等于0.05
+gamma = 0.05
+
+#求解
+solution = odeint(SIR, y0, t, args=(beta, gamma))
+
+#显示用正常10进制格式
+np.set_printoptions(suppress=True)
+#显示前4行结果
+#solution[0:4,0:3]
+
+

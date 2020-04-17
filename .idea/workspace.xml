@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="" />
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/COVID-19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/COVID-19.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forth.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/forth.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/forth.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +42,29 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.third">
+  <component name="RunManager" selected="Python.forth">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="COVID-19" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="first" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="COVID-19" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,6 +81,25 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/first.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="forth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="COVID-19" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/forth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -126,6 +174,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.forth" />
         <item itemvalue="Python.third" />
         <item itemvalue="Python.second (1)" />
         <item itemvalue="Python.first" />
@@ -154,7 +203,7 @@
       <workItem from="1586595228425" duration="345000" />
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
-      <workItem from="1587138034282" duration="3273000" />
+      <workItem from="1587138034282" duration="5248000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -231,22 +280,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="819" y="174" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1586597008907" />
-    <state width="570" height="185" key="GridCell.Tab.0.bottom" timestamp="1586614194010">
+    <state width="723" height="201" key="GridCell.Tab.0.bottom" timestamp="1587142268172">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="570" height="185" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586614194010" />
-    <state width="570" height="185" key="GridCell.Tab.0.center" timestamp="1586614194009">
+    <state width="723" height="201" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587142268172" />
+    <state width="723" height="201" key="GridCell.Tab.0.center" timestamp="1587142268171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="570" height="185" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586614194009" />
-    <state width="570" height="185" key="GridCell.Tab.0.left" timestamp="1586614194009">
+    <state width="723" height="201" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587142268171" />
+    <state width="723" height="201" key="GridCell.Tab.0.left" timestamp="1587142268171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="570" height="185" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586614194009" />
-    <state width="570" height="185" key="GridCell.Tab.0.right" timestamp="1586614194010">
+    <state width="723" height="201" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587142268171" />
+    <state width="723" height="201" key="GridCell.Tab.0.right" timestamp="1587142268171">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="570" height="185" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586614194010" />
+    <state width="723" height="201" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587142268171" />
     <state x="540" y="62" key="SettingsEditor" timestamp="1587138092230">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -255,6 +304,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1587141853210" />
+    <state x="607" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587142302573">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="607" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1587142302573" />
     <state x="562" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587140624613">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -266,7 +319,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COVID_19$second__1_.coverage" NAME="second (1) Coverage Results" MODIFIED="1585934359072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/COVID_19$third.coverage" NAME="third Coverage Results" MODIFIED="1586612585214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/COVID_19$third.coverage" NAME="third Coverage Results" MODIFIED="1587142200489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/COVID_19$second.coverage" NAME="second Coverage Results" MODIFIED="1585846308359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/COVID_19$first.coverage" NAME="first Coverage Results" MODIFIED="1585928863118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
