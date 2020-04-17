@@ -154,7 +154,7 @@
       <workItem from="1586595228425" duration="345000" />
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
-      <workItem from="1587138034282" duration="2215000" />
+      <workItem from="1587138034282" duration="2494000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -176,6 +176,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="开始定义SIR微分方程" />
@@ -195,10 +206,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="860" y="29" key="#second_(1)/0.0.1536.834@0.0.1536.834" timestamp="1586055774837" />
-    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587140697223">
+    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587141099683">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587140697223" />
+    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587141099683" />
     <state x="819" y="174" key="FileChooserDialogImpl" timestamp="1586597008907">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
