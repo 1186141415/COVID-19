@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/forth.py" afterDir="false" />
-    </list>
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +154,7 @@
       <workItem from="1586595228425" duration="345000" />
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
-      <workItem from="1587138034282" duration="1935000" />
+      <workItem from="1587138034282" duration="2215000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -166,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587140077533</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="赋予初始值">
+      <created>1587140698716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587140698716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +179,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="开始定义SIR微分方程" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始定义SIR微分方程" />
+    <MESSAGE value="赋予初始值" />
+    <option name="LAST_COMMIT_MESSAGE" value="赋予初始值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="897" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585843865297">
