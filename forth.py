@@ -1,6 +1,11 @@
 import numpy as np
 from scipy.integrate import odeint
 
+#绘图
+import matplotlib.pyplot as plt
+#在jupyter中设置行内显示
+#%maplotlib inline
+
 #写出SIR模型的函数
 def SIR(y,t,beta,gamma):
     S,I,R = y
@@ -38,4 +43,16 @@ np.set_printoptions(suppress=True)
 #显示前4行结果
 #solution[0:4,0:3]
 
+#绘图
+fig, ax = plt.subplots(facecolor='w', dpi=100)
+
+for data, color, label_name in zip([solution[:,1], solution[:,2]], ['r', 'g'],['infectious','recovered']):
+    ax.plot(t, data, color, alpha = 0.5, lw=2, label=label_name)
+
+ax.set_xlabel('Time/days')
+ax.set_ylabel('Number')
+ax.legend()
+ax.grid(axis='y')
+plt.box(False)
+plt.show()
 
