@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="定义损失函数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forth.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/forth.ipynb" afterDir="false" />
@@ -254,8 +254,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="使用数据拟合参数-β-和-γ" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="使用数据拟合参数-β-和-γ" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
