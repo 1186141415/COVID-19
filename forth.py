@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 #用pandas导入数据
 import pandas as pd
 
+# 导入minimize函数
+from scipy.optimize import minimize
+
 #写出SIR模型的函数
 def SIR(y,t,beta,gamma):
     S,I,R = y
@@ -144,17 +147,17 @@ data = pd.read_csv('alltime_world_2020_04_04.csv')
 italy = data[data['name']=='意大利']
 
 #构造训练集
-#截取1月31日至3月15日之间的意大利疫情数据
-italy_train = italy.set_index('date').loc['2020-01-31':'2020-3-15']
-#确定训练集每天的感者人数
-infectious_train = italy_train['total_confirm']-italy_train['total_heal']-italy_train['total_dead']
-#与建立SIR模型时相类似，这里我们也选取每天的康复者和死亡者作为SIR模型的恢复者人数
-recovered_train = italy_train['total_heal']+italy_train['total_dead']
+# 截取1月31日至3月15日之间的意大利疫情数据
+italy_train = italy.set_index('date').loc['2020-01-31':'2020-03-15']
+# 确定训练集每天的感染者人数
+infectious_train = italy_train['total_confirm'] - italy_train['total_heal'] - italy_train['total_dead']
+# 与建立SIR模型时相类似，这里我们也选取每天的康复者和死亡者作为SIR模型的恢复者
+recovered_train = italy_train['total_heal'] + italy_train['total_dead']
 
-#设置总人口数N=60000000
+# 设置总人口N = 60000000
 N = 60000000
-#确定训练集每天的易感者人数
-susceptible_train = N-recovered_train-infectious_train
+# 确定训练集每天的易感者人数
+susceptible_train = N - recovered_train - infectious_train
 
 #生成验证集采用同样的操作
 # 截取3月16日至4月3日之间的意大利疫情数据
@@ -164,6 +167,21 @@ infectious_valid = italy_valid['total_confirm'] - italy_valid['total_heal'] - it
 # 确定验证集的每天的治愈者人数
 recovered_valid = italy_valid['total_heal'] + italy_valid['total_dead']
 # 因为我们的损失函数中只包含I(t)和R(t),所以在验证集中，我们不再计算易感者人数
+
+#训练模型
+# 模型初始值
+I0 = 2
+R0 = 0
+S0 = N - I0 - R0
+y0 = [S0,I0,R0]
+
+# 训练模型
+optimal = minimize(loss,[0.0001,0.0001],
+                   args=(infectious_train,recovered_train,y0),
+                   method='L-BFGS-B',
+                   bounds=[(0.00000001, 1), (0.00000001, 1)])
+
+
 
 
 
