@@ -116,5 +116,5 @@ for plot_index, solution, params in zip(range(5)[1:], solution_list, param_list)
     ax.legend()
     ax.grid(axis='y')
     plt.box(False)
-plt.show()
+#plt.show()
 
