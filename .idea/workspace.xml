@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="" />
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/forth-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forth.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/forth.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/forth.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="860" y="29" key="#second_(1)/0.0.1536.834@0.0.1536.834" timestamp="1586055774837" />
-    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587222998967">
+    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587227366118">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587222998967" />
+    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587227366118" />
     <state x="862" y="100" width="581" height="640" key="DiffContextDialog" timestamp="1587144612268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -307,10 +312,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="723" height="201" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587142268171" />
-    <state x="540" y="62" key="SettingsEditor" timestamp="1587220065793">
+    <state x="540" y="62" key="SettingsEditor" timestamp="1587226880038">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587220065793" />
+    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587226880038" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587141853210">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

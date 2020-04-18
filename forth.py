@@ -117,4 +117,27 @@ for plot_index, solution, params in zip(range(5)[1:], solution_list, param_list)
     ax.grid(axis='y')
     plt.box(False)
 #plt.show()
+<<<<<<< Updated upstream
+=======
+
+#使用数据拟合参数β和γ
+#定义损失函数
+def loss(parameters, infectious, recovered ,y0):
+    #确定训练的天数
+    size = len(infectious)
+    #设置时间跨度
+    t = np.linspace(1, size, size)
+    beta, gamma= parameters
+    #计算预测值
+    solution = odeint(SIR, y0, t, args=(beta, gamma))
+    #计算每日感染者人数的预测值和真实值的均方误差
+    l1 = np.mean((solution[:,1]-infectious)**2)
+    #计算每日的治愈者人数的预测值和真实值之间的均方误差
+    l2 = np.mean((solution[:,2]-recovered)**2)
+    #返回SIR模型的损失值
+    return l1+l2
+
+
+
+>>>>>>> Stashed changes
 
