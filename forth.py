@@ -93,4 +93,28 @@ ax.set_ylabel('Number')
 ax.legend()
 ax.grid(axis='y')
 plt.box(False)
+#plt.show()
+
+
+t = np.linspace(1,360,360)
+#设置不同的beta和gamma参数
+param_list = [(0.125, 0.05), (0.25, 0.05), (0.25, 0.1), (0.125, 0.1)]
+#预测
+solution_list = [odeint(SIR, y0, t, args=item) for item in param_list]
+#绘图
+fig = plt.figure(facecolor='w', figsize=(15, 10), dpi=100)
+
+for plot_index, solution, params in zip(range(5)[1:], solution_list, param_list):
+
+    ax = fig.add_subplot(int('22'+str(plot_index)))
+    ax.set_title(r'$\beta$=%.3f $\gamma$=%.3f' % params)
+
+    for index, color, label_name in zip(range(3),['b', 'r', 'g'], ['susceptible', 'infectious', 'recovered']):
+        ax.plot(t, solution[:, index], color, alpha=0.5, lw=2, label=label_name)
+    ax.set_xlabel('Time/days')
+    ax.set_ylabel('Number')
+    ax.legend()
+    ax.grid(axis='y')
+    plt.box(False)
 plt.show()
+
