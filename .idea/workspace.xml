@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +84,9 @@
       <module name="COVID-19" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -199,6 +200,7 @@
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
       <workItem from="1587138034282" duration="11047000" />
+      <workItem from="1587219988942" duration="2792000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -246,7 +248,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -303,10 +307,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="723" height="201" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587142268171" />
-    <state x="540" y="62" key="SettingsEditor" timestamp="1587138092230">
+    <state x="540" y="62" key="SettingsEditor" timestamp="1587220065793">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587138092230" />
+    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587220065793" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587141853210">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
