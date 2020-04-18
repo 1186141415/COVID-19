@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="导入真实数据开始">
+    <list default="true" id="48b9cd5a-de28-42cc-aa8f-aa116fffd707" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forth.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/forth.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/forth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +198,7 @@
       <workItem from="1586595228425" duration="345000" />
       <workItem from="1586596359605" duration="21000" />
       <workItem from="1586596946644" duration="11053000" />
-      <workItem from="1587138034282" duration="10749000" />
+      <workItem from="1587138034282" duration="11047000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
