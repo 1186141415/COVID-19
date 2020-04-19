@@ -123,30 +123,29 @@ for plot_index, solution, params in zip(range(5)[1:], solution_list, param_list)
 
 #使用数据拟合参数β和γ
 #定义损失函数
-def loss(parameters, infectious, recovered ,y0):
-    #确定训练的天数
+def loss(parameters,infectious, recovered, y0):
+    # 确定训练模型的天数
     size = len(infectious)
-    #设置时间跨度
-    t = np.linspace(1, size, size)
-    beta, gamma= parameters
-    #计算预测值
+    # 设置时间跨度
+    t = np.linspace(1,size,size)
+    beta, gamma = parameters
+    # 计算预测值
     solution = odeint(SIR, y0, t, args=(beta, gamma))
-    #计算每日感染者人数的预测值和真实值的均方误差
-    l1 = np.mean((solution[:,1]-infectious)**2)
-    #计算每日的治愈者人数的预测值和真实值之间的均方误差
-    l2 = np.mean((solution[:,2]-recovered)**2)
-    #返回SIR模型的损失值
+    # 计算每日的感染者人数的预测值和真实值的均方误差
+    l1 = np.mean((solution[:,1] - infectious)**2)
+    # 计算每日的治愈者人数的预测值和真实值之间的均方误差
+    l2 = np.mean((solution[:,2] - recovered)**2)
+    # 返回SIR模型的损失值
     return l1+l2
 
 
 
 #读取数据并划分训练集与验证集
-#读取所有国家的疫情数据
+# 读取所有国家的疫情数据
 data = pd.read_csv('alltime_world_2020_04_04.csv')
-#挑选出关于意大利的疫情数据
+# 挑选出其中关于意大利的疫情数据
 italy = data[data['name']=='意大利']
 
-#构造训练集
 # 截取1月31日至3月15日之间的意大利疫情数据
 italy_train = italy.set_index('date').loc['2020-01-31':'2020-03-15']
 # 确定训练集每天的感染者人数
@@ -181,7 +180,36 @@ optimal = minimize(loss,[0.0001,0.0001],
                    method='L-BFGS-B',
                    bounds=[(0.00000001, 1), (0.00000001, 1)])
 
+beta,gamma = optimal.x
+#下面我们对3月16日至4月3日意大利的疫情进行预测：
+#在3月16日时，意大利的感染者人数为23073，治愈者人数为4907。
+# 确定初值
+I0_valid = 23073
+R0_valid = 4907
+S0_valid = N - I0_valid- R0_valid
+y0_valid = [S0_valid, I0_valid, R0_valid]
 
-
+# 确定观察的时间周期
+T = len(infectious_valid)
+# 设置估计疫情的时间跨度为T天
+t = np.linspace(1,T,T)
+# 估计三种人数的数量
+solution = odeint(SIR, y0_valid, t, args = (beta, gamma))
+# 绘图
+fig, ax = plt.subplots(facecolor='w', dpi=100)
+# 绘制估计的I曲线与真实的I曲线
+ax.plot(t, infectious_valid, 'r-.', alpha=0.5, lw=2, label='infectious_valid')
+ax.plot(t, solution[:,1], 'r', alpha=0.5, lw=2, label='infectious_predict')
+# 绘制估计的R曲线与真实的R曲线
+ax.plot(t, recovered_valid, 'g-.', alpha=0.5, lw=2, label='recovered_valid')
+ax.plot(t, solution[:,2], 'g', alpha=0.5, lw=2, label='recovered_predict')
+# 设置横纵坐标轴
+ax.set_xlabel('Time/days')
+ax.set_ylabel('Number')
+# 添加图例
+ax.legend()
+ax.grid(axis='y')
+plt.box(False)
+plt.show()
 
 
