@@ -210,6 +210,54 @@ ax.set_ylabel('Number')
 ax.legend()
 ax.grid(axis='y')
 plt.box(False)
-plt.show()
+#plt.show()
 
+class SIRModel:
 
+    import numpy as np
+    from scipy.integrate import odeint
+
+    def __init__(self, beta, gamma, method):
+
+        self.__beta = beta
+        self.__gamma = gamma
+        self.__method = method
+        self.__optimal = None
+        self.__predict_loss = None
+
+    def sir_model(self, y0, t, beta, gamma):
+
+        S, I, R = y0
+        dSdt = -beta*S*I/(S+I+R)
+        dIdt = beta*S*I/(S+I+R)-gamma*I
+        dRdt = gamma*I
+
+    def loss_function(self, params, infected, recovered, y0):
+
+        size =len(infected)
+        t = np.linspace(1,size,size)
+        beta, gamma= params
+        solution = odeint(self.sir_model(), y0, t, args=(beta, gamma))
+        l1=np.mean((solution[:1]-infected)**2)
+        l2=np.mean((solution[:2]-recovered)**2)
+        return  l1+l2
+
+    def fit(self, y0, infected, recovered):
+
+        self.__optimal = minimize(self.loss_function(), [self.__beta,self.__gamma], args=(infected, recovered, y0), method=self.__method, bounds=[(0.00000001,1),(0.00000001,1)])
+
+    def predict(self, test_y0, days):
+
+        predict_result = odeint(self.sir_model(), test_y0, np.linspace(1, days, days), args=tuple(self.__optimal.x))
+        return predict_result
+
+    def get_optimal_params(self):
+        return self.__optimal.x
+
+    def get_predict_loss(self):
+        return self.__predict_loss
+
+#模型初始值
+def get_init_data(N, I0, R0):
+    S0 = N-I0-R0
+    return [S0, I0, R0]
