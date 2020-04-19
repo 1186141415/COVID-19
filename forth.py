@@ -285,4 +285,39 @@ model.fit(y0, infectious_train, recovered_train)
 #输出估计最优参数
 best_params = model.get_optimal_params()
 
+#用新估计出的参数值来预测3月16日至4月3日的易感者、感染者和恢复者的数量：
+# 3月16日疫情初值
+I0_valid = 23073
+R0_valid = 4907
+y0_valid = get_init_data(N, I0_valid, R0_valid)
+# 预测
+predict_result = model.predict(y0_valid,19)
+
+t = np.linspace(1,T,T)
+# 绘图
+fig, ax = plt.subplots(facecolor='w', dpi=100)
+# 绘制估计的I曲线与真实的I曲线
+ax.plot(t, infectious_valid, 'r-.', alpha=0.5, lw=2, label='infectious_valid')
+ax.plot(t, predict_result[:,1], 'r', alpha=0.5, lw=2, label='infectious_predict')
+# 绘制估计的R曲线与真实的R曲线
+ax.plot(t, recovered_valid, 'g-.', alpha=0.5, lw=2, label='recovered_valid')
+ax.plot(t, predict_result[:,2], 'g', alpha=0.5, lw=2, label='recovered_predict')
+# 设置横纵坐标轴
+ax.set_xlabel('Time/days')
+ax.set_ylabel('Number')
+# 添加图例
+ax.legend()
+ax.grid(axis='y')
+plt.box(False)
+plt.show()
+
+
+
+
+
+
+
+
+
+
 
