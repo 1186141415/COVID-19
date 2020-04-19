@@ -206,7 +206,7 @@
       <workItem from="1586596946644" duration="11053000" />
       <workItem from="1587138034282" duration="11047000" />
       <workItem from="1587219988942" duration="2792000" />
-      <workItem from="1587228837037" duration="3137000" />
+      <workItem from="1587228837037" duration="12920000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587228894044</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="通过训练的模型对3月16日至4月3日意大利的疫情进行预测并绘图">
+      <created>1587263837296</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587263837296</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +274,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="使用数据拟合参数-β-和-γ" />
+                        <option value="将SIR微分函数、训练和验证过程封装成类" />
                       </list>
                     </value>
                   </entry>
@@ -284,6 +291,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="将SIR微分函数、训练和验证过程封装成类" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="使用数据拟合参数-β-和-γ" />
@@ -305,7 +317,8 @@
     <MESSAGE value="绘制了感染和治愈人数的曲线图" />
     <MESSAGE value="定义损失函数" />
     <MESSAGE value="构建训练集和验证集" />
-    <option name="LAST_COMMIT_MESSAGE" value="构建训练集和验证集" />
+    <MESSAGE value="通过训练的模型对3月16日至4月3日意大利的疫情进行预测并绘图" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过训练的模型对3月16日至4月3日意大利的疫情进行预测并绘图" />
   </component>
   <component name="WindowStateProjectService">
     <state x="897" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585843865297">
@@ -320,10 +333,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="860" y="29" key="#second_(1)/0.0.1536.834@0.0.1536.834" timestamp="1586055774837" />
-    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587228946149">
+    <state x="218" y="13" width="1318" height="813" key="CommitChangelistDialog2" timestamp="1587263835888">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587228946149" />
+    <state x="218" y="13" width="1318" height="813" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587263835888" />
     <state x="862" y="100" width="581" height="640" key="DiffContextDialog" timestamp="1587144612268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -360,14 +373,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="607" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1587142302573" />
-    <state x="562" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587140624613">
+    <state x="1045" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587279445226">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="562" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1587140624613" />
-    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587149676926">
+    <state x="1045" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1587279445226" />
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587266538959">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587149676926" />
+    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587266538959" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/COVID_19$second__1_.coverage" NAME="second (1) Coverage Results" MODIFIED="1585934359072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
