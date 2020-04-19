@@ -312,7 +312,64 @@ plt.box(False)
 #plt.show()
 
 
+#为了模型由更好的预测效果，我们接着通过3月31日至4月3日的数据训练模型，更新β和γ
+# 截取3月31日至4月3日之间的意大利疫情数据
+italy_train = italy.set_index('date').loc['2020-03-31':'2020-04-03']
+# 确定训练集每天的感染者人数
+infectious_train = italy_train['total_confirm'] - italy_train['total_heal'] - italy_train['total_dead']
+# 与建立SIR模型时相类似，这里我们也选取每天的康复者和死亡者作为SIR模型的恢复者
+recovered_train = italy_train['total_heal'] + italy_train['total_dead']
 
+N = 60000000
+I0 = 77635
+R0 = 28157
+y0 = get_init_data(N, I0, R0)
+
+# 建立模型，设定beta gamma初始值，优化方法
+new_model = SIRModel(0.0001, 0.0001, 'L-BFGS-B')
+
+# 训练模型，输入参数：初始值，训练集
+new_model.fit(y0, infectious_train,recovered_train)
+
+# 输出估计最优参数
+best_params = new_model.get_optimal_params()
+
+
+#上面是训练过程
+######################################
+#最后我们预测从4月4日至未来两年的疫情：
+N = 60000000
+I0 = 85388
+R0 = 34439
+y0_test = get_init_data(N, I0, R0)
+
+# 进行预测
+predict_result = new_model.predict(y0_test,730)
+
+infectious_real = italy['total_confirm'] - italy['total_heal'] - italy['total_dead']
+recovered_real = italy['total_heal'] + italy['total_dead']
+t = np.linspace(1,len(infectious_real),len(infectious_real))
+tpredict = np.linspace(64,793,730)
+
+fig = plt.figure(facecolor='w',dpi=100)
+ax = fig.add_subplot(111)
+# 绘制真实的I曲线与真实的R曲线
+ax.plot(t, infectious_real, 'r', alpha=0.5, lw=2, label='infectious_real')
+ax.plot(t, recovered_real, 'g', alpha=0.5, lw=2, label='recovered_real')
+# 绘制预测的I曲线、R曲线与S曲线
+ax.plot(tpredict, predict_result[:,1], 'r-.', alpha=0.5, lw=2, label='infectious_predict')
+ax.plot(tpredict, predict_result[:,2], 'g-.', alpha=0.5, lw=2, label='recovered_predict')
+ax.plot(tpredict, predict_result[:,0], 'b-.', alpha=0.5, lw=2, label='susceptible_predict')
+
+
+# 设置横纵坐标轴
+ax.set_xlabel('Time/days')
+ax.set_ylabel('Number')
+# 添加图例
+legend = ax.legend()
+ax.grid(axis='y')
+plt.box(False)
+plt.show()
 
 
 
