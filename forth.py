@@ -309,7 +309,7 @@ ax.set_ylabel('Number')
 ax.legend()
 ax.grid(axis='y')
 plt.box(False)
-plt.show()
+#plt.show()
 
 
 

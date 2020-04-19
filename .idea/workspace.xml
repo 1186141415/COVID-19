@@ -206,7 +206,7 @@
       <workItem from="1586596946644" duration="11053000" />
       <workItem from="1587138034282" duration="11047000" />
       <workItem from="1587219988942" duration="2792000" />
-      <workItem from="1587228837037" duration="12611000" />
+      <workItem from="1587228837037" duration="12920000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -373,10 +373,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="607" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1587142302573" />
-    <state x="1045" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587264139661">
+    <state x="1045" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587279445226">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="1045" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1587264139661" />
+    <state x="1045" y="342" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1587279445226" />
     <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587266538959">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
