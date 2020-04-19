@@ -206,6 +206,7 @@
       <workItem from="1586596946644" duration="11053000" />
       <workItem from="1587138034282" duration="11047000" />
       <workItem from="1587219988942" duration="2792000" />
+      <workItem from="1587228837037" duration="3137000" />
     </task>
     <task id="LOCAL-00001" summary="开始定义SIR微分方程">
       <created>1587140077533</created>
@@ -242,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587146251735</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="定义损失函数">
+      <created>1587228894044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587228894044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,8 +262,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="使用数据拟合参数-β-和-γ" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="使用数据拟合参数-β-和-γ" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -269,7 +303,9 @@
     <MESSAGE value="测试2" />
     <MESSAGE value="测试3" />
     <MESSAGE value="绘制了感染和治愈人数的曲线图" />
-    <option name="LAST_COMMIT_MESSAGE" value="绘制了感染和治愈人数的曲线图" />
+    <MESSAGE value="定义损失函数" />
+    <MESSAGE value="构建训练集和验证集" />
+    <option name="LAST_COMMIT_MESSAGE" value="构建训练集和验证集" />
   </component>
   <component name="WindowStateProjectService">
     <state x="897" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585843865297">
@@ -284,10 +320,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="860" y="29" key="#second_(1)/0.0.1536.834@0.0.1536.834" timestamp="1586055774837" />
-    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587227366118">
+    <state x="745" y="13" key="CommitChangelistDialog2" timestamp="1587228946149">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587227366118" />
+    <state x="745" y="13" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587228946149" />
     <state x="862" y="100" width="581" height="640" key="DiffContextDialog" timestamp="1587144612268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -312,10 +348,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="723" height="201" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587142268171" />
-    <state x="540" y="62" key="SettingsEditor" timestamp="1587226880038">
+    <state x="540" y="62" key="SettingsEditor" timestamp="1587228869956">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587226880038" />
+    <state x="540" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587228869956" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587141853210">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
