@@ -210,6 +210,109 @@ ax.set_ylabel('Number')
 ax.legend()
 ax.grid(axis='y')
 plt.box(False)
-plt.show()
+#plt.show()
+
+class SIRModel:
+    import numpy as np
+    from scipy.integrate import odeint
+
+    def __init__(self, beta, gamma, method):
+        self.__beta = beta
+        self.__gamma = gamma
+        self.__method = method
+        self.__optimal = None
+        self.__predict_loss = None
+
+    def sir_model(self, y0, t, beta, gamma):
+        S, I, R = y0
+        dSdt = -beta * S * I / (S + I + R)
+        dIdt = beta * S * I / (S + I + R) - gamma * I
+        dRdt = gamma * I
+        return [dSdt, dIdt, dRdt]
+
+    def loss_function(self, params, infected, recovered, y0):
+        size = len(infected)
+        t = np.linspace(1, size, size)
+        beta, gamma = params
+        solution = odeint(self.sir_model, y0, t, args=(beta, gamma))
+        l1 = np.mean((solution[:, 1] - infected) ** 2)
+        l2 = np.mean((solution[:, 2] - recovered) ** 2)
+        return l1 + l2
+
+    def fit(self, y0, infected, recovered):
+        self.__optimal = minimize(self.loss_function, [self.__beta, self.__gamma],
+                                  args=(infected, recovered, y0),
+                                  method=self.__method,
+                                  bounds=[(0.00000001, 1), (0.00000001, 1)])
+
+    def predict(self, test_y0, days):
+        predict_result = odeint(self.sir_model, test_y0, np.linspace(1, days, days), args=tuple(self.__optimal.x))
+        return predict_result
+
+    def get_optimal_params(self):
+        return self.__optimal.x
+
+    def get_predict_loss(self):
+        return self.__predict_loss
+
+
+# 模型初始值
+def get_init_data(N, I0, R0):
+    S0 = N - I0 - R0
+    return [S0, I0, R0]
+
+
+#我们选从3月8日至3月15日的数据作为训练集，训练模型，并对3月16日至4月3日的疫情进行预测。
+# 截取3月8日至3月15日之间的意大利疫情数据
+italy_train = italy.set_index('date').loc['2020-03-08':'2020-03-15']
+# 确定训练集每天的感染者人数
+infectious_train = italy_train['total_confirm'] - italy_train['total_heal'] - italy_train['total_dead']
+# 与建立SIR模型时相类似，这里我们也选取每天的康复者和死亡者作为SIR模型的恢复者
+recovered_train = italy_train['total_heal'] + italy_train['total_dead']
+
+
+N = 60000000
+I0 = 6534
+R0 = 988
+y0 = get_init_data(N, 8514, 1635)
+
+#建立模型，设定beta gamma初始值，优化方法
+model = SIRModel(0.0001, 0.0001, 'L-BFGS-B')
+
+#训练模型， 输入参数： 初始值，训练集
+model.fit(y0, infectious_train, recovered_train)
+
+#输出估计最优参数
+best_params = model.get_optimal_params()
+
+#用新估计出的参数值来预测3月16日至4月3日的易感者、感染者和恢复者的数量：
+# 3月16日疫情初值
+I0_valid = 23073
+R0_valid = 4907
+y0_valid = get_init_data(N, I0_valid, R0_valid)
+# 预测
+predict_result = model.predict(y0_valid,19)
+
+t = np.linspace(1,T,T)
+# 绘图
+fig, ax = plt.subplots(facecolor='w', dpi=100)
+# 绘制估计的I曲线与真实的I曲线
+ax.plot(t, infectious_valid, 'r-.', alpha=0.5, lw=2, label='infectious_valid')
+ax.plot(t, predict_result[:,1], 'r', alpha=0.5, lw=2, label='infectious_predict')
+# 绘制估计的R曲线与真实的R曲线
+ax.plot(t, recovered_valid, 'g-.', alpha=0.5, lw=2, label='recovered_valid')
+ax.plot(t, predict_result[:,2], 'g', alpha=0.5, lw=2, label='recovered_predict')
+# 设置横纵坐标轴
+ax.set_xlabel('Time/days')
+ax.set_ylabel('Number')
+# 添加图例
+ax.legend()
+ax.grid(axis='y')
+plt.box(False)
+#plt.show()
+
+
+
+
 
 
