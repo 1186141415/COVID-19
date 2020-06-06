@@ -1,4 +1,4 @@
-# COVID-19
+#                               COVID-19 数据可视化
  爬取新冠肺炎期间的感染数据运用matplotlib,pyecharts进行数据可视化,最后用SIR传染模型进行未来疫情趋势预测
 
 1.数据源:https://wp.m.163.com/163/page/news/virus_report/index.html?_nw_=1&_anw_=1
