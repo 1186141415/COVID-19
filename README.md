@@ -1,5 +1,5 @@
 # COVID-19
- 爬取新冠肺炎期间的感染数据并运用pyecharts进行数据可视化
+ 爬取新冠肺炎期间的感染数据运用matplotlib,pyecharts进行数据可视化,最后用SIR传染模型进行未来疫情趋势预测
 
 1.数据源:https://wp.m.163.com/163/page/news/virus_report/index.html?_nw_=1&_anw_=1
 
@@ -13,7 +13,9 @@
 
 5.forth.ipynb:使用SIR模型和echars进行未来疫情趋势预测
 
-参考：数据酷客http://cookdata.cn
+参考
+数据酷客：http://cookdata.cn
 
 ###########################本项目为演示方便将.py文件创建了.ipynb的副本。###########################
+                 数据和预测结果仅用于交流学习，疫情发展真实态势请以地区政府公布官方结果为准
 
